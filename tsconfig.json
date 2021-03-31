@@ -1,0 +1,15 @@
+{
+    　　"compilerOptions": {
+    　　　　"outDir": "./dist", // 这块写不写都可以，webpack.config.js里面已经配置了output
+    　　　　"module": "es6", // 指的是用的es module的引入方式
+    　　　　"target": "es5", // 指的是打包成es5代码
+           "noImplicitAny": true,
+           "allowJs": true, // 允许tsx引入js文件
+    　　},
+        "include": [
+            "./src/*" // 要用ts-loader解析的文件路径
+        ],
+        "exclude": [
+            "./node_modules" // 不用ts-loader解析的文件路径
+        ]
+}
